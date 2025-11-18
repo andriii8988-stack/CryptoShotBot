@@ -9,7 +9,7 @@ from aiogram.filters import Command
 from datetime import datetime, timedelta  # <-- ДЛЯ ЧАСУ
 
 
-API_TOKEN = "7674406693:AAFm9VTyW9uANoM_8lLQldsILEHBxQcR68s"
+API_TOKEN = os.getenv("API_TOKEN")
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
@@ -188,3 +188,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
